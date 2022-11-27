@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.mysuperhero.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentHero"
+            app:destination="@id/fragmentHero" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHero"
+        android:name="com.example.mysuperhero.FragmentHero"
+        android:label="fragment_hero"
+        tools:layout="@layout/fragment_hero" />
+</navigation>
